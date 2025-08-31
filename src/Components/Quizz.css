@@ -1,0 +1,85 @@
+.container{
+    width: 640px;
+    margin: auto;
+    margin-top:150px ;
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 40px 50px;
+}
+.container hr{
+    height: 2px;
+    border: none;
+    background: black;
+}
+.container h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.container ul li {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    padding-left: 15px;
+    border: 1px solid #686868;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.container button {
+    margin: auto;
+    width: 250px;
+    height: 65px;
+    background: red;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+.container .index{
+    margin: auto;
+}
+.container .correct {
+    background-color: green;
+    color: white;
+}
+.container .wrong {
+    background-color: #f44336; /* red */
+    color: white;
+}
+.result-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: grid;
+    place-items: center;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.result-modal {
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    transform: scale(0.8);
+    opacity: 0;
+    animation: popIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes popIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
