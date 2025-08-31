@@ -4,7 +4,7 @@ Small React quiz themed around TU Darmstadt.
 
 **Live Demo:** https://YOUR-LIVE-URL  
 
-[![Quiz demo](./Quiz.gif)](https://YOUR-LIVE-URL)
+[![Quiz demo](./Quiz.gif)](tu-quiz.vercel.app)
 
 ## Features
 - Multiple-choice questions
